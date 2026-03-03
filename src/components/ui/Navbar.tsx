@@ -41,9 +41,11 @@ export function Navbar() {
                     <Link href="/freelancers" className="text-sm font-medium text-slate-600 hover:text-emerald-500 dark:text-slate-300 transition-colors">Find Talent</Link>
                     <div className="h-4 w-px bg-slate-200 dark:bg-slate-700"></div>
                     <Link href="/login" className="text-sm font-medium text-slate-600 hover:text-emerald-500 dark:text-slate-300 transition-colors">Sign In</Link>
-                    <Button asChild variant="default" size="sm" className="rounded-full">
-                        <Link href="/signup">Join Now</Link>
-                    </Button>
+                    <Link href="/signup" passHref legacyBehavior>
+                        <Button variant="default" size="sm" className="rounded-full">
+                            Join Now
+                        </Button>
+                    </Link>
                 </nav>
             </div>
         </motion.header>
